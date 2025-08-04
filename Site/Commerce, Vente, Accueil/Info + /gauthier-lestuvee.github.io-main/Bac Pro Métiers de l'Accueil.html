@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUQTOI - Bac Pro Métiers de l'Accueil </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        /* Style for the "Retour" button */
+        .back-button, .source-button {
+            padding: 10px 20px;
+            background-color: transparent; /* Transparent background */
+            color: white;
+            border: 2px solid white; /* White border for visibility */
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            z-index: 1000; /* Ensure button is on top */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .back-button:hover, .source-button:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+            color: white; /* Keep text white on hover */
+        }
+
+        .source-button {
+            margin-top: 20px;
+        }
+
+
+        .back-button1, .source-button1 {
+            padding: 10px 20px;
+            background-color: transparent; /* Transparent background */
+            color: rgb(42, 41, 41);
+            border: 2px solid rgb(40, 40, 40); /* White border for visibility */
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            z-index: 1000; /* Ensure button is on top */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+        }
+
+        .back-button1 {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .back-button1:hover, .source-button1:hover {
+            background-color: rgba(49, 48, 48, 0.2); /* Light hover effect */
+            color: rgb(74, 74, 74); /* Keep text white on hover */
+        }
+
+        .source-button1 {
+            margin-top: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- "Retour" button at the top-right corner that opens homepage -->
+    <button class="back-button" onclick="window.location.href='+ d info premier.html';">Retour à l'accueil</button>
+
+    <nav data-aos="slide-right">
+        <ul>
+            <li>
+                <select id="language-selector">
+                    <option value="fr">Français</option>
+                    <option value="en">Anglais</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+    
+    <h3 class="top-name" data-aos="slide-down" data-aos-delay="0">Bac Pro Métiers de l'Accueil </h3>
+    
+    <div id="fr">
+        <div class="body">
+            <div class="area">
+                <ul class="circles">
+                    <li class="li-scare"></li>
+                    <li class="li-scare"></li>
+                    <li class="li-scare"></li>
+                    <li class="li-scare"></li>
+                    <li class="li-scare"></li>
+                    <li class="li-scare"></li>
+                    <li class="li-scare"></li>
+                    <li class="li-scare"></li>
+                    <li class="li-scare"></li>
+                    <li class="li-scare"></li>
+                </ul>
+            </div>
+            
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <h2 class="animate__animated animate__backInDown">Bienvenue sur </h2>
+                    <h1 class="animate__animated animate__backInLeft myself_color">Bac Pro Métiers de l'Accueil </h1>
+                </div>
+            </div>
+        </div>
+        
+        <div class="second_screen">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <h1 class="second_title" data-aos="slide-right" data-aos-delay="50">Bac Pro Métiers de l'Accueil </h1>
+                    <br>
+                    <br>
+                    <h3>• Cette formation dure trois ans et prépare les élèves à des métiers dans les domaines de l'accueil, du service client, et de l'assistance. </h3>
+                    <h3>• Les enseignements incluent des matières générales comme les langues étrangères (anglais et espagnol), ainsi que des modules spécifiques sur la gestion de la relation avec les clients, la communication et la prise en charge de l’accueil physique et téléphonique​</h3>
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <!-- "Source" button replacing the heading -->
+                    <button class="source-button1" src="/Site/Source.html">Voir la source</button>
+                    
+                    <br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+        
+        <div class="third_screen">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                    <h1 class="second_title" data-aos="slide-left" data-aos-delay="50">Page d'accueil</h1>
+                    <div class="flex_card">
+                        <div class="fade-in" data-aos="slide-right" data-aos-delay="0">
+                            <a href="#">
+                                <img src="/Site/Commerce, Vente, Accueil/Info + /gauthier-lestuvee.github.io-main/img/portfolio1_vignette.png" alt="" width="720">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="Javascript/language.js"></script>
+</body>
+</html>
