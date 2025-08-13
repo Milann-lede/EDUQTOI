@@ -252,3 +252,24 @@ select {
 .library-experience-list li{
   margin: 50px;
 }
+.langage-experience-list li,
+.library-experience-list li {
+    margin: 20px; /* espace autour de chaque image et texte */
+}
+
+.langage-experience-list img,
+.library-experience-list img {
+    display: block;
+    margin: 0 auto; /* centre les images */
+}
+
+.langage-experience-list li,
+.library-experience-list li {
+    margin: 20px; /* espace entre les photos */
+}
+
+.langage-experience-list img,
+.library-experience-list img {
+    display: block;
+    margin: 0 auto; /* centre les images */
+}
