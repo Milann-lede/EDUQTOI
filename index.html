@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr" style="transition: 1s; scroll-behavior: smooth;">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDUQTOI</title>
+    <meta name="description"
+        content="EDUQTOI : Plateforme d'orientation pour l'après bac pro au lycée Arthur Rimbaud. Découvrez les filières Commerce, SN et Menuiserie.">
+    <meta name="keywords"
+        content="orientation, bac pro, lycée arthur rimbaud, commerce, systèmes numériques, menuiserie, eduqtoi">
     <!-- Personal Link -->
-    <link rel="icon" type="image/x-icon" href="assets/favico.ico" />
-    <link rel="stylesheet" href="css/title.css">
-    <link rel="stylesheet" href="css/wave.css">
-    <link rel="stylesheet" href="css/list.css">
-    <link rel="stylesheet" href="css/core.css">
+
+    <link rel="stylesheet" href="./css/title.css">
+    <link rel="stylesheet" href="./css/wave.css">
+    <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="./css/core.css">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="Photo EDUQTOI/Photo logo E.png" />
 
@@ -24,45 +29,27 @@
     <!-- JavaScript de Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
+
 <body class="body" style="transition: 1s; scroll-behavior: smooth;">
     <link rel="stylesheet" href="css/progress-bar.css">
     <div id="progress-bar"></div>
-    <script>
-        // Récupération de la hauteur totale de la page
-        const body = document.body,
-            html = document.documentElement;
-        const height = Math.max(
-            body.scrollHeight,
-            body.offsetHeight,
-            html.clientHeight,
-            html.scrollHeight,
-            html.offsetHeight
-        );
-        // Fonction pour mettre à jour la largeur de la barre de progression
-        function updateProgressBar() {
-            const scrollTop =
-                window.pageYOffset || document.documentElement.scrollTop;
-            const progress = (scrollTop / (height * 2)) * 150;
-            document.getElementById("progress-bar").style.width = progress + "%";
-        }
-        // Appel de la fonction de mise à jour de la barre de progression au chargement de la page et à chaque événement de défilement
-        window.addEventListener("load", updateProgressBar);
-        window.addEventListener("scroll", updateProgressBar);
-    </script>
-    <div class="header">
+    <script src="js/script.js" defer></script>
+    <header class="header">
 
         <!-- Content before waves -->
         <div class="inner-header flex">
             <h1 class="titleh1">ÉDUQTOI</h1>
-            <h3>ÉDUQTOI est un site qui va t’aider à t’orienter <br> après le bac pro avec toute les orientation possible dans le lycée Arthur Rimbaud</h3>
+            <h3>ÉDUQTOI est un site qui va t’aider à t’orienter <br> après le bac pro avec toute les orientation
+                possible dans le lycée Arthur Rimbaud</h3>
             <br>
             <ul class="ul-list">
                 <li>
-                    <a class="button" href="Commerce, Vente, Accueil/Commerce, Vente, Accueil.html">Commerce, Vente, Accueil</a>
+                    <a class="button" href="Commerce, Vente, Accueil/Commerce, Vente, Accueil.html">Commerce, Vente,
+                        Accueil</a>
                     <a class="button" href="Systèmes numériques/Systèmes numériques.html">Systèmes numériques </a>
                     <!--<a class="button" href="#achievements">Réalisations</a>-->
                     <a class="button" href="Menuiserie/Menuiserie.html">Menuiserie</a>
-  
+
                 </li>
             </ul>
         </div>
@@ -86,7 +73,8 @@
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
                 <defs>
-                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                 </defs>
                 <g class="parallax">
                     <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
@@ -98,82 +86,65 @@
         </div>
         <!-- Waves end -->
 
-    </div>
+    </header>
     <!-- Header ends -->
 
     <!-- Content starts -->
-    <div class="content flex space">
+    <main class="content flex space">
         <h2 id="presentation" class="presentation h2p">Présentation</h2>
-        <p class="presentation-paragraph">EDUQTOI est une plateforme innovante dédiée à l’orientation et à l’accompagnement des étudiants dans leur parcours éducatif. Créée dans le but de faciliter l'accès à l'information sur les différentes filières de formation, ÉDUQTOI se positionne comme un allié essentiel pour les élèves, les parents et les enseignants. Elle offre une multitude de ressources pour aider les jeunes à choisir leur voie professionnelle et à développer les compétences nécessaires pour réussir dans le monde moderne.</p>
-     
+        <p class="presentation-paragraph">EDUQTOI est une plateforme innovante dédiée à l’orientation et à
+            l’accompagnement des étudiants dans leur parcours éducatif. Créée dans le but de faciliter l'accès à
+            l'information sur les différentes filières de formation, ÉDUQTOI se positionne comme un allié essentiel pour
+            les élèves, les parents et les enseignants. Elle offre une multitude de ressources pour aider les jeunes à
+            choisir leur voie professionnelle et à développer les compétences nécessaires pour réussir dans le monde
+            moderne.</p>
+
+
         <div class="br"></div>
         <h2 id="skills" class="skills h2p"> coder en </h2>
         <link rel="stylesheet" href="css/skills.css">
-        <div class="container-skills">
+        <section class="container-skills">
             <div class="skills-paragraph">
                 <div class="paragraph-skills-params">
                     <div class="size-skills"><i class="fas fa-comments"></i></div>
                     <h3>HTML/CSS</h3>
-                    <p>Avec plus de deux ans de pratique, je suis pratiquement capable de répondre à n'importe quelle demande dans le domaine du frontend, et je suis heureux de pouvoir mettre mes compétences au service de projets passionnants et innovants !</p>
+                    <p>Avec plus de deux ans de pratique, je suis pratiquement capable de répondre à n'importe quelle
+                        demande dans le domaine du frontend, et je suis heureux de pouvoir mettre mes compétences au
+                        service de projets passionnants et innovants !</p>
                 </div>
                 <div class="paragraph-skills-params">
                     <div class="size-skills"><i class="fas fa-money-bill"></i></div>
                     <h3>JavaScript</h3>
-                    <p>Depuis un an, j'apprends le JavaScript pour créer des animations innovantes et esthétiques qui apporteront une touche de magie à vos projets web. C'est ma passion de faire en sorte que chaque réalisation devienne une expérience unique et inspirante pour vous.</p>
+                    <p>Depuis un an, j'apprends le JavaScript pour créer des animations innovantes et esthétiques qui
+                        apporteront une touche de magie à vos projets web. C'est ma passion de faire en sorte que chaque
+                        réalisation devienne une expérience unique et inspirante pour vous.</p>
                 </div>
             </div>
-        </div>
-        <h3 class="skills-subtitle">Vous pouvez trouver mon <a class="a-under-skills" href="https://github.com/Milann-lede" target="_blank">github</a> et mon  <a class="a-under-skills" href="https://portfolio-milannlede.netlify.app/" target="_blank">portfolio </a>pour voir mes créations.</h3>
-        <style>
-            .a-under-skills {
-                color: #565656;
-            }
-
-            .a-under-skills:hover {
-                text-decoration: none;
-                color: #363636;
-            }
-        </style>
+        </section>
+        <h3 class="skills-subtitle">Vous pouvez trouver mon <a class="a-under-skills"
+                href="https://github.com/Milann-lede" target="_blank">github</a> et mon <a class="a-under-skills"
+                href="https://portefolio-milann-lede.vercel.app/" target="_blank">portfolio </a>pour voir mes créations.
+        </h3>
 
         <div class="br"></div>
         <h2 id="presentation" class="presentation h2p">Réseau</h2>
-            <div class="contact-info">
-                <div class="logo-container">
-                    <a href="https://www.instagram.com/eduqtoi/" target="_blank">
-                        <img src="Photo EDUQTOI/Photo insta.jpg" alt="Instagram Logo" class="social-logo">
-                    </a>
-                    <a href="https://twitter.com/eduqtoi" target="_blank">
-                        <img src="Photo EDUQTOI/Photo X.jpg" alt="Twitter Logo" class="social-logo">
-                    </a>
-                </div>
+        <div class="contact-info">
+            <div class="logo-container">
+                <a href="https://www.instagram.com/eduqtoi/" target="_blank">
+                    <img src="Photo EDUQTOI/Photo insta.jpg" alt="Instagram Logo" class="social-logo">
+                </a>
+                <a href="https://twitter.com/eduqtoi" target="_blank">
+                    <img src="Photo EDUQTOI/Photo X.jpg" alt="Twitter Logo" class="social-logo">
+                </a>
             </div>
-        </div>
-    </div>
+            <div class="br"></div>
+    </main>
+    <footer class="footer">
+        <!-- Footer content if any, currently just closing struct -->
+    </footer>
     <!-- Content ends -->
 
-    <style>
-        .contact-page {
-            text-align: center;
-            margin-top: 50px;
-        }
 
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        .social-logo {
-            width: 50px; /* Ajuste la taille des logos */
-            height: 50px; /* Ajuste la taille des logos */
-            border-radius: 15px; /* Coins arrondis */
-            margin: 0 20px; /* Espace entre les logos */
-        }
-
-        .skills-subtitle {
-            margin-top: 20px;
-        }
-    </style>
 </body>
+
 </html>

@@ -14,21 +14,26 @@ body::-webkit-scrollbar {
     color: #000;
   }
   
-  body {
+body {
     position: relative;
     animation: fadeIn ease 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    }
-    
-    @keyframes fadeIn {
+}
+
+@keyframes fadeIn {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
-    }
+}
+
+.br{
+    margin-top: 10%;
+}
 
 .presentation {
     font-family: Arial, sans-serif;
@@ -42,7 +47,7 @@ body::-webkit-scrollbar {
     position: relative;
   }
   
-.presentation:before, h2p:after {
+.presentation:before {
     content: "";
     display: block;
     width: 100%;
@@ -52,82 +57,82 @@ body::-webkit-scrollbar {
     bottom: -5px;
 }
 
-.presentation-paragraph{
+.presentation-paragraph {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     width: 65%;
 }
 
-.br{
+.br {
     margin-top: 10%;
 }
 
 .skills {
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  font-size: 64px;
-  color: #000;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  text-align: center;
-  margin-bottom: 50px;
-  position: relative;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
 }
 
-.skills:before, h2p:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: #909090;
-  position: absolute;
-  bottom: -5px;
+.skills:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #909090;
+    position: absolute;
+    bottom: -5px;
 }
 
 .achievements {
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  font-size: 56px;
-  color: #000;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: center;
-  margin-bottom: 50px;
-  position: relative;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 56px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
 }
 
-.achievements:before, h2p:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: #909090;
-  position: absolute;
-  bottom: -5px;
+.achievements:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #909090;
+    position: absolute;
+    bottom: -5px;
 }
 
 .contact {
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  font-size: 56px;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: center;
-  width: 30%;
-  margin-left: 35%;
-  margin-bottom: 50px;
-  position: relative;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 56px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 50px;
+    position: relative;
 }
 
-.contact:before, h2p:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: #909090;
-  position: absolute;
-  bottom: -5px;
+.contact:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #909090;
+    position: absolute;
+    bottom: -5px;
 }
 
 .section-gray-contact{
@@ -169,4 +174,132 @@ body::-webkit-scrollbar {
 .social-logo:hover {
   transform: scale(1.1); /* Effet zoom au survol */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre subtile */
+}
+
+/* Styles moved from index.html (inline) */
+.contact-page {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-logo {
+    width: 50px; /* Overrides previous 40px to match inline style */
+    height: 50px;
+    border-radius: 15px; /* Changed from 50% to 15px to match inline style */
+    margin: 0 20px; /* Changed from 0 30px to match inline style */
+}
+
+.skills-subtitle {
+    margin-top: 20px;
+}
+
+.a-under-skills {
+    color: #565656;
+}
+
+.a-under-skills:hover {
+    text-decoration: none;
+
+    color: #363636;
+}
+
+/* Table Styles */
+.table-title {
+    margin-top: 20px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Allonge le tableau et réduit la largeur des cellules */
+.rounded-table {
+    width: 100%;
+    /* Allonge le tableau sur toute la largeur */
+    max-width: 1200px;
+    /* Limite la taille maximale pour un écran plus large */
+    border-collapse: collapse;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.rounded-table th,
+.rounded-table td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    /* Réduit la largeur des cellules en ajustant le padding */
+    text-align: center;
+    text-decoration: none;
+    min-width: 100px;
+    /* Limite la largeur minimale des cellules */
+}
+
+.rounded-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.button-table {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: transparent;
+    color: #000000;
+    border: 2px solid #323232;
+    border-radius: 50px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-table:hover {
+    background-color: #848282;
+    color: rgb(46, 45, 45);
+    text-decoration: none;
+    /* Assure que le texte ne se souligne pas au survol */
+}
+
+.rounded-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Styles pour le bouton retour */
+.return-button-container {
+    position: absolute;
+    /* Positionnement absolu */
+    top: 10px;
+    /* Ajustez la distance par rapport au haut */
+    left: 10px;
+    /* Ajustez la distance par rapport à la gauche */
+    z-index: 100;
+    /* Assurez-vous qu'il soit au-dessus d'autres éléments */
+}
+
+.return-button-container .button {
+    background-color: #323232;
+    /* Couleur de fond pour le bouton retour */
+    color: white;
+    /* Couleur du texte */
+    padding: 10px 15px;
+    /* Ajoutez un padding pour le bouton */
+    border-radius: 5px;
+    /* Arrondir les coins */
+    text-decoration: none;
+    /* Retirer la sous-ligne */
+    transition: background-color 0.3s, color 0.3s;
+    /* Effet de transition */
+}
+
+.return-button-container .button:hover {
+    background-color: #848282;
+    /* Changement de couleur au survol */
 }

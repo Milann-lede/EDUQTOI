@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr" style="transition: 1s; scroll-behavior: smooth;">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDUQTOI - Commerce, Vente, Accueil</title>
     <!-- Personal Link -->
-    <link rel="icon" type="image/x-icon" href="assets/favico.ico" />
-    <link rel="stylesheet" href="css/title.css">
-    <link rel="stylesheet" href="css/wave.css">
-    <link rel="stylesheet" href="css/list.css">
-    <link rel="stylesheet" href="css/core.css">
+    <link rel="icon" type="image/x-icon" href="../Photo EDUQTOI/Photo logo E.png" />
+    <meta name="description"
+        content="Découvrez la filière Commerce, Vente et Accueil du lycée Arthur Rimbaud. Formations bac pro en relation client et métiers du commerce.">
+    <meta name="keywords" content="commerce, vente, accueil, bac pro, lycée arthur rimbaud, relation client">
+    <link rel="stylesheet" href="../CSS/title.css">
+    <link rel="stylesheet" href="../CSS/wave.css">
+    <link rel="stylesheet" href="../CSS/list.css">
+    <link rel="stylesheet" href="../CSS/core.css">
     <!-- CSS de Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -21,42 +25,26 @@
     <!-- JavaScript de Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
+
 <body class="body" style="transition: 1s; scroll-behavior: smooth;">
-    <link rel="stylesheet" href="css/progress-bar.css">
+    <link rel="stylesheet" href="../CSS/progress-bar.css">
     <div id="progress-bar"></div>
-    <script>
-        const body = document.body,
-            html = document.documentElement;
-        const height = Math.max(
-            body.scrollHeight,
-            body.offsetHeight,
-            html.clientHeight,
-            html.scrollHeight,
-            html.offsetHeight
-        );
-        function updateProgressBar() {
-            const scrollTop =
-                window.pageYOffset || document.documentElement.scrollTop;
-            const progress = (scrollTop / (height * 2)) * 150;
-            document.getElementById("progress-bar").style.width = progress + "%";
-        }
-        window.addEventListener("load", updateProgressBar);
-        window.addEventListener("scroll", updateProgressBar);
-    </script>
-    <div class="header">
+    <div id="progress-bar"></div>
+    <script src="../js/script.js" defer></script>
+    <header class="header">
         <div class="inner-header flex">
             <h1 class="titleh1">Commerce, Vente, Accueil</h1>
 
             <br>
             <ul class="ul-list">
                 <li>
-                    <a class="button" href="Systèmes numériques/Systèmes numériques.html">Systèmes numériques</a>
-                    <a class="button" href="https://eduqtoi.netlify.app/">Accueil</a>
-                    <a class="button" href="Menuiserie/Menuiserie.html">Menuiserie</a>
+                    <a class="button" href="../Systèmes numériques/Systèmes numériques.html">Systèmes numériques</a>
+                    <a class="button" href="../index.html">Accueil</a>
+                    <a class="button" href="../Menuiserie/Menuiserie.html">Menuiserie</a>
                 </li>
             </ul>
         </div>
-        <link rel="stylesheet" href="css/scare-anim.css">
+        <link rel="stylesheet" href="../CSS/scare-anim.css">
         <div class="area">
             <ul class="circles">
                 <li class="li-scare"></li>
@@ -75,7 +63,8 @@
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
                 <defs>
-                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                 </defs>
                 <g class="parallax">
                     <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
@@ -85,10 +74,12 @@
                 </g>
             </svg>
         </div>
-    </div>
-    <div class="content flex space">
+    </header>
+    <main class="content flex space">
         <h2 id="presentation" class="presentation h2p">Présentation</h2>
-        <p class="presentation-paragraph">Le lycée professionnel Arthur Rimbaud à Ribécourt-Dreslincourt propose des formations dans les Métiers de la Relation Client, ce qui inclut des filières comme le Bac Pro Commerce, Vente et Accueil.</p>
+        <p class="presentation-paragraph">Le lycée professionnel Arthur Rimbaud à Ribécourt-Dreslincourt propose des
+            formations dans les Métiers de la Relation Client, ce qui inclut des filières comme le Bac Pro Commerce,
+            Vente et Accueil.</p>
 
         <!-- Tableau avec bordures arrondies et boutons seulement pour les formations -->
         <h3 class="table-title">Informations sur les formations</h3>
@@ -103,83 +94,31 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a class="button-table" href="Commerce, Vente, Accueil/Anné/seconde.html">seconde</a></td>
+                        <td><a class="button-table" href="Anné/seconde.html">seconde</a></td>
                         <td>1 ans</td>
                         <td>Bac Pro </td>
                     </tr>
                     <tr>
-                        <td><a class="button-table" href="Commerce, Vente, Accueil/Anné/première.html">Première</a></td>
+                        <td><a class="button-table" href="Anné/première.html">Première</a>
+                        </td>
                         <td>1 ans</td>
                         <td>Bac pro</td>
                     </tr>
                     <tr>
-                        <td><a class="button-table" href="Commerce, Vente, Accueil/Anné/Terminal.html">Terminal</a></td>
+                        <td><a class="button-table" href="Anné/Terminal.html">Terminal</a>
+                        </td>
                         <td>1 an</td>
                         <td>Bac pro</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-    </div>
+    </main>
+    <footer class="footer"></footer>
+    <div class="br"></div>
 
-    <style>
-        .table-title {
-            margin-top: 20px;
-        }
-
-        .table-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        /* Allonge le tableau et réduit la largeur des cellules */
-        .rounded-table {
-            width: 100%; /* Allonge le tableau sur toute la largeur */
-            max-width: 1200px; /* Limite la taille maximale pour un écran plus large */
-            border-collapse: collapse;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .rounded-table th,
-        .rounded-table td {
-            border: 1px solid #ddd;
-            padding: 5px; /* Réduit la largeur des cellules en ajustant le padding */
-            text-align: center;
-            text-decoration: none;
-            min-width: 100px; /* Limite la largeur minimale des cellules */
-        }
-
-        .rounded-table th {
-            background-color: #f2f2f2;
-            font-weight: bold;
-        }
-
-        .button-table {
-            display: inline-block;
-            padding: 10px 20px;
-            text-decoration: none;
-            background-color: transparent;
-            color: #000000;
-            border: 2px solid #323232;
-            border-radius: 50px;
-            font-family: Arial, sans-serif;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .button-table:hover {
-            background-color: #848282;
-            color: rgb(46, 45, 45);
-            text-decoration: none; /* Assure que le texte ne se souligne pas au survol */
-        }
-
-        .rounded-table tbody tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-    </style>
 
 
 </body>
+
 </html>

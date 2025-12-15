@@ -1,4 +1,4 @@
-#progress-bar{
+#progress-bar {
     width: 0%;
     height: 2.5px;
     background-color: #666666;
@@ -7,4 +7,8 @@
     left: 0;
     z-index: 999;
     transition: width .1s ease;
+}
+
+.br{
+    margin-top: 10%;
 }

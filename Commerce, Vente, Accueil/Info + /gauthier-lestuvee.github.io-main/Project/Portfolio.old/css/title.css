@@ -8,9 +8,10 @@
     text-align: center;
     margin-bottom: 50px;
     position: relative;
-  }
-  
-.titleh1:before, h1:after {
+}
+
+.titleh1:before,
+h1:after {
     content: "";
     display: block;
     width: 80px;
@@ -19,11 +20,11 @@
     position: absolute;
     bottom: -20px;
 }
-  
+
 .titleh1:before {
     left: 50%;
 }
-  
+
 .titleh1:after {
     right: 50%;
 }

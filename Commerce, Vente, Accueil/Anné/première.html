@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr" style="transition: 1s; scroll-behavior: smooth;">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDUQTOI - première</title>
+    <title>EDUQTOI - Classe de Première</title>
+    <meta name="description"
+        content="Découvrez le programme de la classe de Première Commerce, Vente et Accueil au lycée Arthur Rimbaud.">
+    <meta name="keywords" content="première, commerce, vente, accueil, bac pro, lycée arthur rimbaud">
     <!-- Personal Link -->
     <link rel="icon" type="image/x-icon" href="assets/favico.ico" />
-    <link rel="stylesheet" href="css/title.css">
-    <link rel="stylesheet" href="css/wave.css">
-    <link rel="stylesheet" href="css/list.css">
-    <link rel="stylesheet" href="css/core.css">
+    <link rel="stylesheet" href="../../CSS/title.css">
+    <link rel="stylesheet" href="../../CSS/wave.css">
+    <link rel="stylesheet" href="../../CSS/list.css">
+    <link rel="stylesheet" href="../../CSS/core.css">
     <!-- CSS de Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -21,28 +25,11 @@
     <!-- JavaScript de Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
+
 <body class="body" style="transition: 1s; scroll-behavior: smooth;">
-    <link rel="stylesheet" href="css/progress-bar.css">
+    <link rel="stylesheet" href="../../CSS/progress-bar.css">
     <div id="progress-bar"></div>
-    <script>
-        const body = document.body,
-            html = document.documentElement;
-        const height = Math.max(
-            body.scrollHeight,
-            body.offsetHeight,
-            html.clientHeight,
-            html.scrollHeight,
-            html.offsetHeight
-        ); 
-        function updateProgressBar() {
-            const scrollTop =
-                window.pageYOffset || document.documentElement.scrollTop;
-            const progress = (scrollTop / (height * 2)) * 150;
-            document.getElementById("progress-bar").style.width = progress + "%";
-        }
-        window.addEventListener("load", updateProgressBar);
-        window.addEventListener("scroll", updateProgressBar);
-    </script>
+    <script src="../../js/script.js"></script>
     <div class="header">
         <div class="inner-header flex">
             <h1 class="titleh1">Première</h1>
@@ -50,17 +37,18 @@
             <br>
             <ul class="ul-list">
                 <li>
-                    <a class="button" href="Systèmes numériques/Systèmes numériques.html">Systèmes numériques</a>
-                    <a class="button" href="Premier-Page.html">Accueil</a>
-                    <a class="button" href="Menuiserie/Menuiserie.html">Menuiserie</a>
+                    <a class="button" href="../../Systèmes numériques/Systèmes numériques.html">Systèmes
+                        numériques</a>
+                    <a class="button" href="../../index.html">Accueil</a>
+                    <a class="button" href="../../Menuiserie/Menuiserie.html">Menuiserie</a>
                 </li>
             </ul>
             <!-- Ajout d'une nouvelle div pour le bouton retour -->
             <div class="return-button-container">
-                <a class="button" href="Commerce, Vente, Accueil/Commerce, Vente, Accueil.html">retour</a>
+                <a class="button" href="../Commerce, Vente, Accueil.html">retour</a>
             </div>
         </div>
-        <link rel="stylesheet" href="css/scare-anim.css">
+        <link rel="stylesheet" href="../../CSS/scare-anim.css">
         <div class="area">
             <ul class="circles">
                 <li class="li-scare"></li>
@@ -79,7 +67,8 @@
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
                 <defs>
-                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                 </defs>
                 <g class="parallax">
                     <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
@@ -92,9 +81,14 @@
     </div>
     <div class="content flex space">
         <h2 id="presentation" class="presentation h2p">Présentation</h2>
-        <p class="presentation-paragraph">En première, l’accent est mis sur le développement des compétences professionnelles. Les élèves approfondissent les techniques de vente, de négociation, et d'animation d’un point de vente. Ils participent aussi à des stages en milieu professionnel (PFMP) pour consolider leurs acquis pratiques.</p>
-        <br>        
-        <a class="button-table" href="Commerce, Vente, Accueil/Info + /gauthier-lestuvee.github.io-main/+ d info premier.html"> Plus d'info </a>
+        <p class="presentation-paragraph">En première, l’accent est mis sur le développement des compétences
+            professionnelles. Les élèves approfondissent les techniques de vente, de négociation, et d'animation d’un
+            point de vente. Ils participent aussi à des stages en milieu professionnel (PFMP) pour consolider leurs
+            acquis pratiques.</p>
+        <br>
+        <a class="button-table"
+            href="Commerce, Vente, Accueil/Info + /gauthier-lestuvee.github.io-main/+ d info premier.html"> Plus d'info
+        </a>
         <div class="br"></div>
         <!-- Tableau avec bordures arrondies et boutons seulement pour les formations -->
         <h2 id="presentation" class="presentation h2p">Informations formations</h2>
@@ -110,12 +104,12 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a class="button-table" href="Commerce, Vente, Accueil/Anné/seconde.html"> Seconde </a></td>
+                        <td><a class="button-table" href="seconde.html"> Seconde </a></td>
                         <td>1 ans</td>
                         <td>Bac Pro</td>
                     </tr>
                     <tr>
-                        <td><a class="button-table" href="Commerce, Vente, Accueil/Anné/Terminal.html"> Terminal </a></td>
+                        <td><a class="button-table" href="Terminal.html"> Terminal </a></td>
                         <td>1 an</td>
                         <td>Bac Pro</td>
                     </tr>
@@ -124,97 +118,22 @@
         </div>
     </div>
 
-    <style>
-        .table-title {
-            margin-top: 20px;
-        }
 
-        .table-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        /* Allonge le tableau et réduit la largeur des cellules */
-        .rounded-table {
-            width: 100%; /* Allonge le tableau sur toute la largeur */
-            max-width: 1200px; /* Limite la taille maximale pour un écran plus large */
-            border-collapse: collapse;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .rounded-table th,
-        .rounded-table td {
-            border: 1px solid #ddd;
-            padding: 5px; /* Réduit la largeur des cellules en ajustant le padding */
-            text-align: center;
-            text-decoration: none;
-            min-width: 100px; /* Limite la largeur minimale des cellules */
-        }
-
-        .rounded-table th {
-            background-color: #f2f2f2;
-            font-weight: bold;
-        }
-
-        .button-table {
-            display: inline-block;
-            padding: 10px 20px;
-            text-decoration: none;
-            background-color: transparent;
-            color: #000000;
-            border: 2px solid #323232;
-            border-radius: 50px;
-            font-family: Arial, sans-serif;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .button-table:hover {
-            background-color: #848282;
-            color: rgb(46, 45, 45);
-            text-decoration: none; /* Assure que le texte ne se souligne pas au survol */
-        }
-
-        .rounded-table tbody tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        /* Styles pour le bouton retour */
-        .return-button-container {
-            position: absolute; /* Positionnement absolu */
-            top: 10px; /* Ajustez la distance par rapport au haut */
-            left: 10px; /* Ajustez la distance par rapport à la gauche */
-            z-index: 100; /* Assurez-vous qu'il soit au-dessus d'autres éléments */
-        }
-
-        .return-button-container .button {
-            background-color: #323232; /* Couleur de fond pour le bouton retour */
-            color: white; /* Couleur du texte */
-            padding: 10px 15px; /* Ajoutez un padding pour le bouton */
-            border-radius: 5px; /* Arrondir les coins */
-            text-decoration: none; /* Retirer la sous-ligne */
-            transition: background-color 0.3s, color 0.3s; /* Effet de transition */
-        }
-
-        .return-button-container .button:hover {
-            background-color: #848282; /* Changement de couleur au survol */
-        }
-    </style>
 
     <div class="br"></div>
 
-                        <h2 id="presentation" class="presentation h2p">Réseau</h2>
+    <h2 id="presentation" class="presentation h2p">Réseau</h2>
     <div class="contact-info">
         <div class="logo-container">
             <a href="https://www.instagram.com/eduqtoi/" target="_blank">
-                <img src="Photo EDUQTOI/Photo insta.jpg" alt="Instagram Logo" class="social-logo">
+                <img src="../../Photo EDUQTOI/Photo insta.jpg" alt="Instagram Logo" class="social-logo">
             </a>
             <a href="https://twitter.com/eduqtoi" target="_blank">
-                <img src="Photo EDUQTOI/Photo X.jpg" alt="Twitter Logo" class="social-logo">
+                <img src="../../Photo EDUQTOI/Photo X.jpg" alt="Twitter Logo" class="social-logo">
             </a>
         </div>
     </div>
+    <footer class="footer"></footer>
 </body>
+
 </html>
